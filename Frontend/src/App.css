@@ -1,0 +1,11 @@
+*{
+    background-color: #142a42;
+}
+button{
+    color: white !important;
+}
+/* In your CSS or SCSS file */
+.shadow-custom {
+    box-shadow: 0 0 20px  rgb(69, 195, 234);
+
+}
