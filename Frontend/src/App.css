@@ -1,5 +1,6 @@
 *{
     background-color: #142a42;
+    color:white;
 }
 button{
     color: white !important;
@@ -7,5 +8,4 @@ button{
 /* In your CSS or SCSS file */
 .shadow-custom {
     box-shadow: 0 0 20px  rgb(69, 195, 234);
-
 }
