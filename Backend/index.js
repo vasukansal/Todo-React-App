@@ -7,7 +7,7 @@ const cors=require('cors')
 require("dotenv").config()
 app.use(cors())
 app.use(express.json());
-
+const PORT =process.env.PORT || 3000
 //inputs-                              FOR ZOD VALIDATION( SO WE WILL CREATE A NEW FILE FOR ZOD VALIDATION NAMED TYPE.JS )
 //title : string
 //description:string
@@ -108,4 +108,4 @@ app.delete("/deletetodo",async function(req,res){
   }
 })
 // console.log(process.env)
-app.listen(3000,);
+app.listen(PORT,);
