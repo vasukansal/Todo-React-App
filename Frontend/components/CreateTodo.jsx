@@ -57,7 +57,7 @@ function CreateTodo() {
         <button
           className="rounded-full ..."
           onClick={async () => {
-            const resp = await fetch("https://a6d3-2a09-bac5-40b3-1eb-00-31-82.ngrok-free.app/", {
+            const resp = await fetch("https://a6d3-2a09-bac5-40b3-1eb-00-31-82.ngrok-free.app/todo", {
               method: "POST",
               body: JSON.stringify({
                 title: title,
