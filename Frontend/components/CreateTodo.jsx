@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function CreateTodo() {
   const [itemAdded, setItemAdded] = useState(false);
@@ -57,7 +57,7 @@ function CreateTodo() {
         <button
           className="rounded-full ..."
           onClick={async () => {
-            const resp = await fetch("http://localhost:3000/todo", {
+            const resp = await fetch("https://todoapphosting.onrender.com", {
               method: "POST",
               body: JSON.stringify({
                 title: title,
@@ -75,7 +75,7 @@ function CreateTodo() {
         </button>
       )}
       <div style={notificationStyle}>
-        <p style={{ backgroundColor: "#0891b2", color: "#ffffff"}}>
+        <p style={{ backgroundColor: "#0891b2", color: "#ffffff" }}>
           Item has been added successfully!
         </p>
       </div>
